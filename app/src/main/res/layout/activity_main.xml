@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints">
+
+    <data>
+
+        <variable
+            name="click"
+            type="com.bis.cloudphone.MainActivity.ClickProxy"/>
+
+
+        <variable
+            name="date"
+            type="com.bis.cloudphone.ui.viewmodel.DateViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".MainActivity">
+
+        <com.bis.cloudphone.test.DecoreViewGroup
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:onClick="@{()->click.clickGroupTest()}"
+            android:layout_height="300dp">
+
+            <com.bis.cloudphone.test.DecoreView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="@{()->click.clickTest()}"
+                android:background="@color/colorAccent"/>
+
+
+        </com.bis.cloudphone.test.DecoreViewGroup>
+
+        <fragment
+            android:id="@+id/main_fragment_host"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:defaultNavHost="true"
+            android:visibility="gone"
+            app:navGraph="@navigation/test" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

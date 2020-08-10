@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test"
+    app:startDestination="@id/test1Fragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/test1Fragment"
+        android:name="com.bis.cloudphone.ui.fragment.Test1Fragment"
+        android:label="Test1Fragment" >
+        <action
+            android:id="@+id/action_test1Fragment_to_test2Fragment"
+            app:destination="@id/test2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/test2Fragment"
+        android:name="com.bis.cloudphone.ui.fragment.Test2Fragment"
+        android:label="Test2Fragment" >
+        <action
+            android:id="@+id/action_test2Fragment_to_test3Fragment"
+            app:destination="@id/test3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/test3Fragment"
+        android:name="com.bis.cloudphone.ui.fragment.Test3Fragment"
+        android:label="Test3Fragment" />
+</navigation>
