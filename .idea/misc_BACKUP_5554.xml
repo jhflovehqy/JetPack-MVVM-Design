@@ -38,7 +38,11 @@
       </value>
     </option>
   </component>
+<<<<<<< .merge_file_17NuIZ
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+=======
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
+>>>>>>> .merge_file_XRvlsN
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
