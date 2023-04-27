@@ -1,4 +1,4 @@
 package com.bis.cloudphone
 
-class Test {
+class ToTest {
 }
